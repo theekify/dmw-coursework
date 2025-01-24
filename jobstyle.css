@@ -1,0 +1,334 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    color:#004D2C;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-sign-in {
+    background: #004D2C;
+    color: white;
+    border: none;
+}
+
+.btn-log-in {
+    background: white;
+    border: 1px solid #ddd;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #004D2C;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 5%;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.stylized {
+    font-family: serif;
+    font-style: italic;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #004D2C;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.freelancer-image {
+    position: absolute;
+    width: 150px;
+}
+
+.freelancer-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.freelancer-info {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.top-left {
+    top: 10%;
+    left: 5%;
+}
+
+.top-right {
+    top: 10%;
+    right: 5%;
+}
+
+.bottom-left {
+    bottom: 20%;
+    left: 5%;
+}
+
+.bottom-right {
+    bottom: 20%;
+    right: 5%;
+}
+
+/* Rest of the styles remain the same */
+/* Trusted By Section */
+.trusted-by {
+    text-align: center;
+    padding: 4rem 5%;
+    background: #f8f9fa;
+}
+
+.trusted-by h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.logo-container img {
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    padding: 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #E1F9F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.icon-circle i {
+    color: #10B981;
+    font-size: 1.5rem;
+}
+
+.browse-link {
+    color: #10B981;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+    background: white;
+    padding: 4rem 5% 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-column h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-column a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.social-links a {
+    color: #666;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact-us {
+    padding: 0.5rem 1.5rem;
+    background: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 2rem;
+    color: #666;
+}
+
+.footer-legal a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .freelancer-image {
+        display: none;
+    }
+    
+    .trusted-logos {
+        gap: 1rem;
+    }
+    
+    .trusted-logos img {
+        height: 20px;
+    }
+    
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
