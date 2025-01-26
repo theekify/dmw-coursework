@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Dashboard - Hiredly</title>
+    <link rel="stylesheet" href="freelan.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <h1>Hiredly</h1>
+        <nav>
+            <ul>
+                <li><a href="#job-listings" class="active">Job Listings</a></li>
+                <li><a href="#applications">My Applications</a></li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <span>Freelancer</span>
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </div>
+</header>
+
+    <main class="container">
+
+        <section id="search">
+            <form class="search-form">
+                <input type="text" placeholder="Search jobs..." class="search-input">
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </section>
+
+        <section id="job-listings">
+            <h2>Job Listings</h2>
+            <div class="job-list">
+                <div class="job-card">
+                    <h3>Senior Web Developer</h3>
+                    <p class="company">Tech Solutions Inc.</p>
+                    <p class="location">Remote</p>
+                    <p class="salary">$80,000 - $120,000</p>
+                    <a href="#" class="btn btn-small">Apply Now</a>
+                </div>
+                <div class="job-card">
+                    <h3>UX Designer</h3>
+                    <p class="company">Creative Designs Co.</p>
+                    <p class="location">New York, NY</p>
+                    <p class="salary">$70,000 - $100,000</p>
+                    <a href="#" class="btn btn-small">Apply Now</a>
+                </div>
+                <div class="job-card">
+                    <h3>Full Stack Developer</h3>
+                    <p class="company">Innovative Apps LLC</p>
+                    <p class="location">San Francisco, CA</p>
+                    <p class="salary">$90,000 - $130,000</p>
+                    <a href="#" class="btn btn-small">Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>My Applications</h2>
+            <table class="application-table">
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Applied Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend Developer</td>
+                        <td>Web Wizards Inc.</td>
+                        <td>2023-05-15</td>
+                        <td>Under Review</td>
+                        <td><a href="#" class="btn btn-small">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Designer</td>
+                        <td>Design Masters Co.</td>
+                        <td>2023-05-10</td>
+                        <td>Interview Scheduled</td>
+                        <td><a href="#" class="btn btn-small">View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Backend Developer</td>
+                        <td>Server Side Solutions</td>
+                        <td>2023-05-05</td>
+                        <td>Rejected</td>
+                        <td><a href="#" class="btn btn-small">View Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hiredly. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
