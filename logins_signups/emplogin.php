@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         if ($password == $row['password']) { 
             $_SESSION['user_email'] = $row['email'];
-            header("Location: /dmw-coursework/freelan.html");
+            header("Location: /dmw-coursework/empdash.html");
         exit();
         } else {
             echo "Invalid email or password";

@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    $sql = "SELECT id FROM freelan WHERE email = '$email'";
+    $sql = "SELECT id FROM emp WHERE email = '$email'";
     $result = $conn->query($sql);
     
     if ($result->num_rows > 0) {
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO freelan (full_name, mobile_number, email, password) VALUES ('$full_name', '$mobile', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: /dmw-coursework/freelan.html");
+        header("Location: /dmw-coursework/empdash.html");
         exit();
     } else {
         echo "An error occurred. Please try again later.";
