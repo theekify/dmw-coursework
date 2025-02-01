@@ -13,7 +13,6 @@
         <nav>
             <ul>
                 <li><a href="#job-listings" class="active">Job Listings</a></li>
-                <li><a href="application.php">My Applications</a></li>
             </ul>
         </nav>
         <div class="user-menu">
