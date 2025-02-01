@@ -22,7 +22,7 @@ A web-based job portal platform inspired by Fiverr, built for the "Developing Mo
   
 ## Contact 📫
 
- <a href ="https://www.instagram.com/theek.aka/">Instagram</a>
+ <a href ="https://www.instagram.com/theek.aka/">Instagram</a> 
 
 ## UI Screenshots 📸
 
