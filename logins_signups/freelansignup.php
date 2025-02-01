@@ -17,7 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-
     if (empty($full_name) || empty($mobile) || empty($email) || empty($password)) {
         die("All fields are required");
     }
@@ -30,24 +29,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Password must be at least 8 characters");
     }
 
+    $stmt = $conn->prepare("SELECT freelanid FROM freelan WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->store_result();
 
-    $sql = "SELECT id FROM freelan WHERE email = '$email'";
-    $result = $conn->query($sql);
-    
-    if ($result->num_rows > 0) {
+    if ($stmt->num_rows > 0) {
         die("Email already registered");
     }
 
-    $sql = "INSERT INTO freelan (full_name, mobile_number, email, password) VALUES ('$full_name', '$mobile', '$email', '$password')";
+    $stmt->close();
 
-    if ($conn->query($sql) === TRUE) {
-        header("Location: /dmw-coursework/freelan.html");
+    $stmt = $conn->prepare("INSERT INTO freelan (full_name, mobile_number, email, password) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $full_name, $mobile, $email, $password);
+
+    if ($stmt->execute() === TRUE) {
+        header("Location: /dmw-coursework/freelan.php");
         exit();
     } else {
         echo "An error occurred. Please try again later.";
     }
 
-$conn->close();
+    $stmt->close();
+    $conn->close();
 }
 
 ?>
