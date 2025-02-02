@@ -22,11 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 mkdir($cv_dir, 0777, true);
             }
             $app_cv_file = $cv_dir . basename($_FILES["app_cv_file"]["name"]);
-            move_uploaded_file($_FILES["app_cv_file"]["tmp_name"], $app_cv_file);
+            if (!move_uploaded_file($_FILES["app_cv_file"]["tmp_name"], $app_cv_file)) {
+                error_log("Failed to move uploaded file.");
+                echo "<script>alert('Failed to upload CV file.'); window.history.back();</script>";
+                exit();
+            }
         } else {
             echo "<script>alert('Only PDF files are allowed!'); window.history.back();</script>";
             exit();
         }
+    } else {
+        error_log("File upload error: " . $_FILES["app_cv_file"]["error"]);
     }
 
     // Insert application into database
@@ -36,12 +42,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("isssssss", $app_job_id, $app_full_name, $app_email, $app_phone, $app_address, $app_linkedin_link, $app_github_link, $app_cv_file);
 
     if ($stmt->execute()) {
-        echo "<script>a window.location.href = 'success.html';</script>";
+        header('Location: success.html');
+        exit();
     } else {
+        error_log("Database error: " . $stmt->error);
         echo "<script>alert('Error submitting application!');</script>";
     }
 
     $stmt->close();
+} else {
+    echo "<script>alert('Invalid request method.'); window.history.back();</script>";
 }
 
 $conn->close();

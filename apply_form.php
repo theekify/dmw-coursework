@@ -1,8 +1,10 @@
 <?php
+session_start();
 require_once 'db.php'; // Ensure database connection is included
 
 $app_job_id = isset($_GET['job_id']) ? intval($_GET['job_id']) : 0;
 $job_title = "";
+$freelanid = isset($_SESSION['freelanid']) ? $_SESSION['freelanid'] : 0;
 
 // Fetch job title from database
 if ($app_job_id > 0) {
@@ -15,7 +17,6 @@ if ($app_job_id > 0) {
     $stmt->close();
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -179,10 +180,11 @@ form {
 }
 
 </style>
-    <h2>Apply for Job</h2>
+<h2>Apply for Job</h2>
     <form action="apply_job.php" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="app_job_id" value="<?php echo $app_job_id; ?>">
-        
+        <input type="hidden" name="freelanid" value="<?php echo $freelanid; ?>">
+
         <label>Full Name:</label>
         <input type="text" name="app_full_name" required><br>
 
