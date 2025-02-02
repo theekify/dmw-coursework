@@ -40,7 +40,7 @@ CREATE TABLE `freelan` (
 
 LOCK TABLES `freelan` WRITE;
 /*!40000 ALTER TABLE `freelan` DISABLE KEYS */;
-INSERT INTO `freelan` VALUES (1,'John Doe','1234567890','johndoe@example.com','password123','2025-02-01 11:31:43'),(2,'testf','242342352','testf@gmail.com','12345678','2025-02-01 23:21:51'),(3,'testf','242342352','testfr@gmail.com','12345678','2025-02-01 23:22:15'),(4,'ken','123','ken@ken.com','123123123123','2025-02-01 23:37:57'),(5,'travis','121','travis@la.com','laflame69','2025-02-01 23:44:48'),(6,'lone','11','lone@des.com','loneeeeeee','2025-02-01 23:48:39'),(7,'testttt','131','niga@niga.com','123456789','2025-02-01 23:51:57'),(8,'testttt','131','niga2@niga.com','21312313123123','2025-02-01 23:52:39'),(9,'yew','242','yyy@gmail.com','123121323243','2025-02-02 13:24:07'),(10,'52','25','geshgh@ge.luy','24153634743','2025-02-02 14:31:00'),(11,'hrhehe','heheh','hehz@hes.gj','21655rtfsvdg','2025-02-02 14:43:57'),(12,'43634','43634','t3tg@ge.lk','525edggh23456yyu','2025-02-02 14:52:43'),(13,'wtwt','tewtwt','hrtw3@hdh.kl','253etrfghtyr43','2025-02-02 14:58:17');
+INSERT INTO `freelan` VALUES (1,'John Doe','1234567890','johndoe@example.com','password123','2025-02-01 11:31:43'),(2,'testf','242342352','testf@gmail.com','12345678','2025-02-01 23:21:51'),(3,'testf','242342352','testfr@gmail.com','12345678','2025-02-01 23:22:15');
 /*!40000 ALTER TABLE `freelan` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-02-02 16:38:12
+-- Dump completed on 2025-02-02 23:25:46
