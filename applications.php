@@ -23,7 +23,7 @@ $result = $stmt->get_result();
 <html lang="en">
 <head>
     <title>Applications - Employer Dashboard</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="apps.css">
 </head>
 <body>
     <section id="applications">

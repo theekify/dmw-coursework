@@ -50,13 +50,14 @@
 
 /* Link styles */
 #applications a {
-    color: #0b4d2c;
+    color: #D76C82;
+    font-weight: bold;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 #applications a:hover {
-    color: #083d23;
+    color: #B03052;
     text-decoration: underline;
 }
 

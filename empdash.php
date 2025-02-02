@@ -56,6 +56,11 @@ $jobs = $conn->query("SELECT * FROM jobs WHERE empid = $empid");
 
             </ul>
         </nav>
+
+        <div class="user-menu" style="display: flex; align-items: center; gap: 1.5rem;">
+    <span style="color: #666666; font-size: 1rem;">Employer</span>
+    <a href="logout.php" class="logout-btn" style="padding: 0.5rem 1rem; background-color: #0b4d2c; color: white; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.9375rem; transition: all 0.2s ease;">Logout</a>
+</div>
     </div>
 </header>
 
@@ -112,6 +117,9 @@ input:invalid:focus {
   border-color: #dc3545;
   box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.25);
 }
+
+
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
