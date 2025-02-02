@@ -26,17 +26,17 @@ A web-based job portal platform inspired by Fiverr, built for the "Developing Mo
 
 ## UI Screenshots 📸
 
-![image](https://github.com/user-attachments/assets/26e1ad60-cb22-4536-a476-409c511eaf7d)
+![Screenshot 2025-02-02 224517](https://github.com/user-attachments/assets/544fd440-9c80-453d-a654-8fecf753b0f5)
 
-![image](https://github.com/user-attachments/assets/e1a6ee29-025f-411a-88b0-f7acf1e4e595)
+![Screenshot 2025-02-02 214707](https://github.com/user-attachments/assets/56c77600-94bb-4031-92aa-f533191c6499)
 
-![image](https://github.com/user-attachments/assets/b62104c8-61a7-49aa-8152-74569dec4ad3)
+![Screenshot 2025-02-02 215322](https://github.com/user-attachments/assets/1429ef79-15fb-4ef9-a87b-69fae806f000)
 
-![image](https://github.com/user-attachments/assets/6b93d66f-34fc-4f09-80d0-fe5bfca1c16e)
+![Screenshot 2025-02-02 214608](https://github.com/user-attachments/assets/9fe5e252-f71f-4e92-a330-83f369bad738)
 
-![image](https://github.com/user-attachments/assets/cffd9aae-17c3-4037-bdeb-ec360bfdc69e)
+![Screenshot 2025-02-02 214642](https://github.com/user-attachments/assets/40fd05e8-6d2e-40a6-8083-7372add7a1a2)
 
-![image](https://github.com/user-attachments/assets/7baaeb4a-ab60-4c0b-8ae5-a82188b4fb9c)
+![Screenshot 2025-02-02 220218](https://github.com/user-attachments/assets/2e25601c-d42f-43dc-8e56-c255d54c40d0)
 
-
+![11](https://github.com/user-attachments/assets/349f1358-b09e-4430-b3dc-2c2982ce9ce1)
 
