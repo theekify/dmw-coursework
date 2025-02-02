@@ -40,7 +40,7 @@ $jobs = $conn->query("SELECT * FROM jobs WHERE empid = $empid");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employer Dashboard - Hiredly</title>
-    <link rel="stylesheet" href="empdash.css">
+    <link rel="stylesheet" href="emp.css">
 </head>
 <body>
 
@@ -52,6 +52,8 @@ $jobs = $conn->query("SELECT * FROM jobs WHERE empid = $empid");
                
                 <li><a href="#post-job">Post Job</a></li>
                 <li><a href="#manage-jobs">Manage Jobs</a></li>
+                <li><a href="applications.php">View Applications</a></li>
+
             </ul>
         </nav>
     </div>
